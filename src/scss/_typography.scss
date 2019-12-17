@@ -1,0 +1,38 @@
+p {
+	Margin: 0;
+	color: $c-body;
+	font-size: $t-bodycopy;
+	Margin-bottom: 20px;
+}
+
+a {
+	color: #ee6a56;
+	text-decoration: underline;
+}
+
+.h1 {
+	font-size: 24px;
+	font-weight: normal;
+	Margin-bottom: 18px;
+}
+
+.h2 {
+	font-size: 22px;
+	font-weight: normal;
+	Margin-bottom: 12px;
+}
+
+.small {
+	font-size: 13px;
+}
+
+.right {
+	text-align: right;
+}
+
+@media screen and (max-width: 414px) {
+	.right {
+		text-align: center!important;
+		border: 1px solid red!important;
+	}
+}

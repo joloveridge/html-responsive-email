@@ -1,0 +1,32 @@
+.heading {
+  margin-top: 0;
+  padding: 0 0 40px;
+  text-align: center;
+
+  p {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    Margin: 0;
+    color: #000000;
+  }
+
+  &--border-bottom {
+    padding: 0 0 10px;
+    border-bottom: 1px solid $c-body-border-divider;
+
+    p {
+      color: $c-brand;
+    }
+  }
+
+  &--border-bottom-light {
+    padding: 0 0 10px;
+    border-bottom: 1px solid #ffffff;
+
+    p {
+      color: $c-brand-secondary-accent-dark;
+    }
+  }
+}

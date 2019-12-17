@@ -1,0 +1,24 @@
+.inner {
+  padding: 40px 20px;
+
+  &--left {
+    background: $c-brand;
+    padding: 20px;
+    border-radius: $border-radius;
+
+    p {
+      color: #ffffff;
+      margin-bottom: 0;
+    }
+  }
+
+  &--right {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: $border-radius;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

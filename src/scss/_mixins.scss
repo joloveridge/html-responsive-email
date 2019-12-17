@@ -1,0 +1,19 @@
+
+@mixin padding($layout-padding) {
+	padding-top: $layout-padding;
+	padding-right: $layout-padding;
+	padding-bottom: $layout-padding;
+	padding-left: $layout-padding;
+}
+
+@mixin link {
+	a {
+		&,
+		&:link,
+		&:visited,
+		& .yshortcuts,
+		& span {
+			@content;
+		}
+	}
+}

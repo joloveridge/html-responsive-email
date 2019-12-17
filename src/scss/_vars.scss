@@ -1,0 +1,50 @@
+// Colour palette
+$c-white:                         #ffffff;
+$c-black:                         #000000;
+$c-light-grey:                    #e5e7e7;
+
+$c-main-background:               $c-white;
+$c-brand:                         #00aec7;
+$c-brand-accent:                  #13294b;
+$c-brand-secondary-accent:        #8ce2d0;
+$c-brand-secondary-accent-dark:   #009b77;
+
+/* Pre-header */
+
+$c-preheader-background:          $c-light-grey;
+
+
+/* Borders */
+
+$c-header-border-divider:         $c-light-grey;
+$c-body-border-divider:           $c-light-grey;
+
+
+/* Footer */
+$c-footer-background:             #eeeeee;
+$c-footer-text:                   #9a9a9a;
+
+
+// Typography colours
+
+$c-link-color:                    $c-black;
+$c-title:                         $c-black;
+$c-body:                          $c-black;
+$c-highlight:                     $c-brand;
+
+$c-footer-body:                   $c-black;
+
+
+// Typography
+
+$t-font-family:                   Arial, Helvetica, sans-serif;
+$t-heading-font-family:           Arial, Helvetica, sans-serif;
+$t-bodycopy:                      18px;
+$t-mobile-bodycopy:               16px;
+$t-lineheight:                    normal;
+
+
+//  Layout & Units
+
+$email-width:                     640px;
+$border-radius:                   5px;

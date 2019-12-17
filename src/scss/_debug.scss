@@ -1,0 +1,7 @@
+img {
+	&:not([editable]),
+	&:not([alt]),
+	&[alt=""] {
+		border: 10px solid blue !important;	
+	}
+}

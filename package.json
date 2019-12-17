@@ -1,0 +1,25 @@
+{
+  "name": "Gulp-Email-Creator",
+  "version": "1.0.1",
+  "description": "A gulp workflow for easing the creation of HTML emails",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "devDependencies": {
+    "fs": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cached": "*",
+    "gulp-imagemin": "*",
+    "gulp-inline-css": "*",
+    "gulp-inline-source": "*",
+    "gulp-livereload": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-sass": "*",
+    "gulp-rename": "*",
+    "minimist": "*",
+    "nodemailer": "*"
+  }
+}

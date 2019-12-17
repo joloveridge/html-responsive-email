@@ -1,0 +1,14 @@
+.pre-header {
+  background: $c-preheader-background;
+  font-size: 12px;
+  text-align: center;
+
+  &.contents {
+    padding: 15px;
+  }
+}
+
+/* Media Queries */
+@media screen and (max-device-width: 414px) {
+
+}

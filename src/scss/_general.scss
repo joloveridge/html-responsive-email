@@ -1,0 +1,75 @@
+// Set the background color for your email.
+body {
+	background-color: $c-main-background;
+	font-family: $t-font-family;
+	line-height: $t-lineheight;
+	color: $c-body;
+	-webkit-font-smoothing: antialiased;
+}
+
+#email-content-wrapper {
+	padding: 0px;
+}
+
+img {
+	display: block;
+}
+
+img.panel-icon {
+	display: inline-block;
+}
+
+body {
+	margin: 0 !important;
+	padding: 0;
+	background-color: #ffffff;
+}
+
+table {
+	border-spacing: 0;
+	font-family: sans-serif;
+	font-size: $t-bodycopy;
+}
+
+td {
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+div[style*="margin: 16px 0"] {
+	margin:0 !important;
+}
+
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+.webkit {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.outer {
+	Margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+}
+
+.contents {
+	width: 100%;
+}
+
+
+@media (max-width: 599px) {
+
+	#email-content-wrapper {
+		max-width: 640px !important;
+		width: 100% !important;
+	}
+}

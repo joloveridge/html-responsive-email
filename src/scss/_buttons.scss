@@ -1,0 +1,108 @@
+.button {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+
+  &__link {
+    padding: 10px;
+
+    display: block;
+    text-decoration: none;
+    border:0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #ffffff;
+    background: #87be45;
+    border: 1px solid #87be45;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    line-height:17px;
+  }
+}
+
+//.button {
+//  background-color: $c-cta-button-background;
+//  color: $c-cta-button-text;
+//  padding: 10px 40px;
+//  text-align: center;
+//  border-radius: 5px;
+//  white-space: nowrap;
+//  text-decoration: none;
+//
+//  a {
+//    background-color: $c-cta-button-background;
+//    color: $c-cta-button-text;
+//    text-decoration: none;
+//  }
+//
+//  &--full-width {
+//    display: block;
+//  }
+//}
+//
+//.button-outline {
+//  border: 1px solid $c-body-border-divider;
+//  background: #ffffff;
+//  text-decoration: none;
+//  border-radius: 0;
+//  padding: 10px 40px;
+//  white-space: nowrap;
+//  text-align: center;
+//
+//  p {
+//    margin: 0;
+//    Margin: 0;
+//    padding: 0;
+//  }
+//
+//  a {
+//    color: $c-brand;
+//    text-decoration: none;
+//  }
+//}
+//
+//.button-outline-accent {
+//  border: 1px solid #ffffff;
+//  background: $c-brand-secondary-accent;
+//  text-decoration: none;
+//  border-radius: 0;
+//  line-height: 40px;
+//  padding: 5px 40px;
+//  white-space: nowrap;
+//  text-align: center;
+//  width: 100% !important;
+//
+//  a {
+//    color: $c-brand-secondary-accent-dark;
+//    text-decoration: none;
+//
+//  }
+//}
+//
+//.button-center {
+//  color: $c-cta-button-text;
+//  text-decoration: none;
+//  border-radius: $border-radius;
+//  font-size: 18px;
+//  background-color: $c-cta-button-background;
+//  border-top: 12px solid $c-cta-button-background;
+//  border-bottom: 12px solid $c-cta-button-background;
+//  border-left: 40px solid $c-cta-button-background;
+//  border-right: 40px solid $c-cta-button-background;
+//  display: inline-block;
+//}
+//
+//.button-outline-center {
+//  color: #009b77;
+//  background: #8ce2d0;
+//  border-top: 12px solid #8ce2d0;
+//  border-bottom: 12px solid #8ce2d0;
+//  border-left: 40px solid #8ce2d0;
+//  border-right: 40px solid #8ce2d0;
+//  margin: 0;
+//  padding: 0;
+//  display: inline-block;
+//}

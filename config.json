@@ -1,0 +1,14 @@
+{
+  "auth": {
+      "mailgun": {
+          "user": "",
+          "pass": ""
+      }
+  },
+  "email": {
+      "from": "",
+      "subject": "",
+      "to": "",
+      "litmus": ""
+  }
+}
