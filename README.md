@@ -26,7 +26,7 @@ There's a full list here https://www.campaignmonitor.com/css/media-queries/media
 - `<img />` usually needs a width i.e. `width="200"` for Outlook. Do not add px at the end of the width size.
 - Styling cannot be applied to img's on any desktop version of Outlook (except Outlook 2019 macOS), Windows Mail. If you need to style around the image, wrap it in a table and style the td.
 - When using Retina images, you have to specifiy a height and width on the image (without pixels) i.e. `<img width="600" height="300">`. This is because of Outlook. Outlook will ignore any css setting and show the image's full width. You can also set height: auto!important; to make sure it resizes for mobile.
-
+- To make the image responsive, add a `max-width` of the image width size, then add `width: 100%` 
 ## Paragraphs and headings
 
 - Headings can be used but you need to set margins for Outlook to keep it consistent. 
