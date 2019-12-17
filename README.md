@@ -36,7 +36,6 @@ There's a full list here https://www.campaignmonitor.com/css/media-queries/media
 ## Padding & Margins
 
 - Use capital M on margin for old versions of Outlook
-- Outlook 2007 and 2010 will convert 
 - Padding doesn't work on images or paragraphs in all versions of Outlook.
 - `<td>` padding is generally safe as long as you’re not setting a width property or attribute. Outlook 2007 and 2010 will convert your width pixels to points, which doesn’t always translate as precisely as you may want.
 - If you add margin or HTML email padding properties to your `<table>` element, it will add that same margin and padding to every nested `<td>` in Outlook 2007 and 2016
