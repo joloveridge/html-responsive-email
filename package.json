@@ -11,7 +11,7 @@
     "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-cached": "*",
-    "gulp-imagemin": "*",
+    "gulp-imagemin": "7.1.0",
     "gulp-inline-css": "*",
     "gulp-inline-source": "*",
     "gulp-livereload": "*",
