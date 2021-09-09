@@ -21,5 +21,8 @@
     "gulp-rename": "*",
     "minimist": "*",
     "nodemailer": "*"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
   }
 }

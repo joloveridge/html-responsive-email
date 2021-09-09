@@ -2,6 +2,6 @@ img {
 	&:not([editable]),
 	&:not([alt]),
 	&[alt=""] {
-		border: 10px solid blue !important;	
+		border: 10px solid red !important;	
 	}
 }

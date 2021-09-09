@@ -1,11 +1,11 @@
 // Include gulp
 var gulp = require('gulp');
-var gulpSass = require('gulp-sass');
+var gulpSass = require('gulp-sass')(require('node-sass'));
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var inliner = require('gulp-inline-css');
 var inlinesource = require('gulp-inline-source');
-var imagemin = require('gulp-imagemin');
+var imagemin = import('gulp-imagemin');
 var livereload = require('gulp-livereload');
 var notify = require('gulp-notify');
 var cache = require('gulp-cached');
@@ -160,3 +160,4 @@ function sendEmail() {
 exports.build = build;
 exports.images = images;
 exports.default = first_run;
+exports.watch = watch;
