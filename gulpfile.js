@@ -6,9 +6,9 @@ var autoprefixer = require('gulp-autoprefixer');
 var inliner = require('gulp-inline-css');
 var inlinesource = require('gulp-inline-source');
 var imagemin = require('gulp-imagemin');
-var notify = require('gulp-notify');
 var cache = require('gulp-cached');
 var plumber = require('gulp-plumber');
+var browserSync = require('browser-sync').create();
 var argv = require('minimist')(process.argv.slice(2), {
 	string: [
 		'template'
@@ -42,11 +42,7 @@ function sass() {
 			, errLogToConsole: true
 		}))
 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-		.pipe(gulp.dest('src/css'))
-		.pipe(notify({
-			"title": "Gulp Task Complete",
-			"message": "Sass Processed"
-		}));
+		.pipe(gulp.dest('src/css'));
 };
  
 // Build our templates
@@ -61,10 +57,7 @@ function build() {
 			removeStyleTags: false
 		}))
 		.pipe(gulp.dest('./output'))
-		.pipe(notify({
-			"title": "Gulp Task Complete",
-			"message": "Build Processed"
-		}))
+		.pipe(browserSync.stream());
 };
 
 // Image task
@@ -94,6 +87,13 @@ function watch() {
 
 // Default Task
 function first_run() {
+	// Serve files from the root of this project
+	browserSync.init({
+		server: {
+			baseDir: "./output/"
+		}
+	});
+	
 	return gulp.series(
 		sass
 		, build
