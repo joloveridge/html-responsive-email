@@ -44,7 +44,10 @@ function sass() {
 		}))
 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 		.pipe(gulp.dest('src/css'))
-		.pipe(notify("SASS task complete!"));
+		.pipe(notify({
+			"title": "Gulp Task Complete",
+			"message": "Sass Processed"
+		}));
 };
  
 // Build our templates
@@ -59,7 +62,10 @@ function build() {
 			removeStyleTags: false
 		}))
 		.pipe(gulp.dest('./output'))
-		.pipe(notify("Build task complete!"))
+		.pipe(notify({
+			"title": "Gulp Task Complete",
+			"message": "Build Processed"
+		}))
 		.pipe(livereload());
 };
 
