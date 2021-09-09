@@ -6,7 +6,6 @@ var autoprefixer = require('gulp-autoprefixer');
 var inliner = require('gulp-inline-css');
 var inlinesource = require('gulp-inline-source');
 var imagemin = require('gulp-imagemin');
-var livereload = require('gulp-livereload');
 var notify = require('gulp-notify');
 var cache = require('gulp-cached');
 var plumber = require('gulp-plumber');
@@ -66,7 +65,6 @@ function build() {
 			"title": "Gulp Task Complete",
 			"message": "Build Processed"
 		}))
-		.pipe(livereload());
 };
 
 // Image task
@@ -86,14 +84,13 @@ function images() {
 
 // Watch Files For Changes
 function watch() {
-	livereload.listen();
 	gulp.watch('src/scss/*.scss', gulp.series(sass, build)).on('change', function() {
 		// Clear cache so all html templates are rebuilt.
 		delete cache.caches['templates'];
 	});
 	gulp.watch('src/html/*.html', build);
 	gulp.watch('src/images/**/*', images);
-};
+}; 
 
 // Default Task
 function first_run() {
